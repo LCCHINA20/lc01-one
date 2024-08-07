@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>网站</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        /* * {
+            border: 1px solid black;
+        } */
+        .yinying {
+            box-shadow: 15px 15px 5px -5px rgba(89, 123, 133, 0.55),
+                inset 1px 1px 3px rgba(142, 204, 240, 0.75),
+                -1px -1px 15px rgba(255, 255, 255, 0.55),
+                inset -1px -1px 5px rgba(0, 0, 0, 0.75);
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .baise {
+            background-color: rgb(109, 165, 202);
+            border-radius: 5px;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .si {
+            margin: 8px;
+        }
+
+        .you {
+            margin-right: 8px;
+        }
+
+        .shang {
+            margin-top: 8px;
+        }
+
+        .zuo {
+            margin-left: 8px;
+        }
+
+        .xia {
+            margin-bottom: 8px;
+        }
+
+        .daohang {
+            padding: 10px 10px;
+            border-bottom: 3px solid #666666;
+            font-size: 20px;
+        }
+
+        /* 当屏幕小于600px时要改变的css */
+        @media (max-width:600px) {
+            .cebianlan {
+                display: none;
+            }
+
+            .neironglan {
+                flex-direction: column;
+            }
+
+            .shujuqu {
+                flex-direction: column;
+            }
+
+            .youqu {
+                margin-left: 8px;
+            }
+
+            .shujukuai {
+                margin: 0 0 8px;
+                flex: auto;
+            }
+        }
+
+        .neironglan::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2;" class="cebianlan baise zuo xia yinying">
+        <!--头像栏-->
+        <div class="flex "
+            style="padding: 10px;align-items: center;justify-content: center;border-bottom: 5px solid rgb(230, 230, 230)">
+            <img src="图片/头像.jpg" width="40px" height="40px" style="
+            border-radius: 10px;" alt="头像">
+            <br>
+            <h3>&nbsp;&nbsp;&nbsp;羽</h3>
+        </div>
+        <!--导航栏-->
+        <div class="flex1">
+            <div class="daohang"><b>导航</b></div>
+            <div class="daohang"><b>导航</b></div>
+            <div class="daohang"><b>导航</b></div>
+            <div class="daohang"><b>导航</b></div>
+            <div class="daohang"><b>导航</b></div>
+            <div class="daohang"><b>导航</b></div>
+            <div class="daohang"><b>导航</b></div>
+            <div class="daohang"><b>导航</b></div>
+            <div class="daohang"><b>导航</b></div>
+        </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+        <!--头部栏-->
+        <div style="height: 85px; z-index:1;" class="baise zuo you yinying"></div>
+        <!--内容区-->
+        <div style="overflow: auto;" class="neironglan flex1 flex xia">
+            <!--左区-->
+            <div style="flex: 3;" class="flex column si">
+                <!--数据区-->
+                <div class="shujuqu flex">
+                    <!--数据块-->
+                    <div style="height: 100px;" class="shujukuai flex1 baise yinying you"></div>
+                    <div style="height: 100px;" class="shujukuai flex1 baise yinying you"></div>
+                    <div style="height: 100px;" class="shujukuai flex1 baise yinying you"></div>
+                    <div style="height: 100px;" class="shujukuai flex1 baise yinying "></div>
+                </div>
+                <!--列表区-->
+                <div class="flex column shang">
+                    <!--列表项-->
+                    <div style="height: 160px;" class="baise yinying  xia"></div>
+                    <div style="height: 160px;" class="baise yinying  xia"></div>
+                    <div style="height: 160px;" class="baise yinying  xia"></div>
+                    <div style="height: 160px;" class="baise yinying  xia"></div>
+                    <div style="height: 160px;" class="baise yinying  xia"></div>
+                    <div style="height: 160px;" class="baise yinying  xia"></div>
+                    <div style="height: 160px;" class="baise yinying  xia"></div>
+                    <div style="height: 160px;" class="baise yinying  xia"></div>
+                </div>
+            </div>
+            <!--右区-->
+            <div style=" flex: 1;" class="youqu flex column you shang">
+                <!--提示区-->
+                <div style="height: 150px;" class="baise yinying"></div>
+                <!--消息区-->
+                <div style="height: 480px;" class="baise yinying shang"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
