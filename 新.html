@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex juzhong">
+        <div style="
+            display: flex;">
+            <img src="图片/头像.jpg" alt="图片" style="
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            margin-right: 10px;"><br>
+        </div>
+        <div>
+            <h1>Hello!</h1>
+        </div>
+    </div>
+    <div class="flex juzhong">
+        <input type="text" style="
+    width: 800px;
+    height:35px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: rgb(255, 7, 7);
+    background:linear-gradient(rgb(255, 157, 157),rgb(255, 160, 180),rgb(149, 184, 223),rgb(135, 135, 253));
+    text-align: center;
+">
+    </div>
+    <!--内容区-->
+    <div class="flex juzhong column" style="
+    background:linear-gradient( 90deg, rgb(255, 70, 70),rgba(243, 38, 38, 0.726),rgb(69, 126, 233),rgb(49, 49, 236));
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 100px;
+    margin-top: 30px;">
+        <!--标题-->
+        <div class="flex juzhong">
+            <div class="flex juzhong yanse1 hezi2">
+                <h1>字母表</h1>
+            </div>
+        </div>
+        <div class="flex hang juzhong">
+            <div class="flex juzhong yanse hezi">
+                <h1>A</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>B</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>C</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>D</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>E</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>F</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>G</h1>
+            </div><br>
+        </div>
+        <div class="flex hang juzhong">
+            <div class="flex juzhong yanse hezi">
+                <h1>H</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>I</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>G</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>K</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>L</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>M</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>N</h1>
+            </div><br>
+        </div>
+        <div class="flex hang juzhong">
+            <div class="flex juzhong yanse hezi">
+                <h1>O</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>P</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>Q</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>R</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>S</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>T</h1>
+            </div><br>
+        </div>
+        <div class="flex hang juzhong">
+            <div class="flex juzhong yanse hezi">
+                <h1>U</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>V</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>W</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>X</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>Y</h1>
+            </div><br>
+            <div class="flex juzhong yanse hezi">
+                <h1>Z</h1>
+            </div><br>
+        </div>
+    </div>
+    <!--dianzan-->
+    <div class="flex">
+        <button id="dzs" onclick="dianzan()" class="yanse2" style="
+        font-size: 36px;
+        border-radius: 10px;
+        margin-top: -60px;
+        height: 50px;
+        color: red;
+        ">0</button>
+    </div>
+    <script>
+        function dianzan() {
+            let dianzanshubiaoqian = window.document.getElementById('dzs');
+            let dianzanshu = parseInt(dianzanshubiaoqian.innerText);
+            let xinshuzi = dianzanshu + 1;
+            dianzanshubiaoqian.innerText = xinshuzi;
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(140deg, red, rgb(154, 154, 248), rgb(59, 59, 255));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hezi {
+            background-color: blueviolet;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        .hezi2 {
+            background-color: burlywood;
+            width: 120px;
+            height: 60px;
+            border-radius: 5px;
+        }
+
+        .yanse {
+            background: linear-gradient(rgb(255, 100, 100), rgb(192, 239, 245), #65c7ff, rgb(166, 179, 252));
+        }
+
+        .yanse1 {
+            background: linear-gradient(50deg, rgb(32, 8, 255), #ff8181, #0da6ff, rgb(253, 12, 12));
+        }
+
+        .yanse2 {
+            background: linear-gradient(50deg, rgb(78, 30, 252), rgb(20, 220, 255));
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .juzhong {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hang {
+            justify-content: space-around;
+            padding: 15px;
+            width: 600px;
+            height: 60px;
+
+        }
+    </style>
+</body>
+
+</html>

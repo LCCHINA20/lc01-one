@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点赞</title>
+    <style>
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--dianzan-->
+    <div class="flex">
+        <button id="dzs" onclick="dianzan()" style="background-color: rgb(182, 186, 187);
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;">0</button>
+    </div>
+    <script>
+        function dianzan(uid, bv) {
+            let jilu = database.get('点赞记录', uid, bv);
+            if (jilu) {
+                let dianzanshu = database.jian('点赞数', bv, 1);
+                database.delete('点赞记录', uid, bv);
+                document.getElementById('dzs').innerText = dianzanshu;
+            } else {
+                let dianzanshu = database.jia('点赞数', bv, 1);
+                database.abb('点赞记录', uid, bv);
+                document.getElementById('dzs').innerText = dianzanshu;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
