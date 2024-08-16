@@ -14,10 +14,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to right,
+            background: linear-gradient(90deg,
                     rgb(113, 65, 168),
-                    rgb(13, 37, 255));
-
+                    rgb(13, 37, 255),
+                    rgba(113, 65, 168));
         }
 
         .flex {
@@ -37,23 +37,39 @@
         }
 
         .biaoti {
-            font-size: 30px;
-            color: rgb(255, 255, 255);
-            background: linear-gradient(to bottom, rgb(73, 73, 73), rgb(85, 85, 85), rgb(122, 122, 122), rgb(99, 99, 99), rgb(88, 88, 88));
+            font-size: 90%;
+            width: 30%;
+            height: 30px;
+            color: rgb(0, 0, 0);
+            background: linear-gradient(to right, rgb(97, 46, 238), rgb(77, 10, 185), rgb(17, 186, 253), rgb(42, 127, 255), rgb(33, 122, 255));
             padding: 10px;
-            border-radius: 20px;
+            border-radius: 10%;
+            margin-bottom: 5%;
         }
+
+        /* 当屏幕小于600px时要改变的css */
+        @media (max-width:600px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(90deg,
+                        rgb(113, 65, 168),
+                        rgb(13, 37, 255),
+                        rgba(113, 65, 168));
+            }
     </style>
     <!--标题-->
-    <div class="flex juzhong">
-        <h1 class="biaoti">键盘</h1>
+    <div class="flex juzhong biaoti">
+        <h1 class="">键盘</h1>
     </div>
     <!--键盘-->
     <jianpan>
         <style>
             .wai {
                 background-color: rgb(39, 39, 39);
-                width: 1063px;
+                width: 1060px;
                 height: 350px;
                 border-radius: 20px;
             }
@@ -129,144 +145,167 @@
             }
 
             .anjianyi {
-                font-size: 12px;
+                font-size: 75%;
                 width: 4.3%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
+                    inset -1px -1px 1px rgb(49, 49, 49)
+            }
+
+            .gnj {
+                font-size: 75%;
+                width: 4.3%;
+                color: aliceblue;
+                background-color: rgb(28, 27, 29);
+                border-radius: 5px;
+                justify-content: center;
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
+                    inset 3px 3px 1px rgb(19, 19, 19),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .anjiantu {
-                font-size: 12px;
+                font-size: 80%;
                 width: 4.3%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 flex-direction: column;
                 justify-content: space-between;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .fuhao {
-                font-size: 15px;
+                font-size: 100%;
                 width: 4.3%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
+                    inset -1px -1px 1px rgb(49, 49, 49)
+            }
+
+            .hcs {
+                font-size: 80%;
+                width: 4.3%;
+                height: 222%;
+                color: aliceblue;
+                background-color: rgb(28, 27, 29);
+                border-radius: 5px;
+                justify-content: center;
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
+                    inset 3px 3px 1px rgb(19, 19, 19),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .tab {
-                font-size: 13px;
+                font-size: 80%;
                 width: 6.55%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .daxie {
-                font-size: 13px;
+                font-size: 80%;
                 width: 8.8%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .huiche {
-                font-size: 13px;
+                font-size: 80%;
                 width: 8.8%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .shift {
-                font-size: 13px;
+                font-size: 80%;
                 width: 11.05%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .kongjian {
-                font-size: 13px;
+                font-size: 80%;
                 width: 13.3%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .kg {
-                font-size: 13px;
                 width: 31.3%;
-                color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .di {
-                font-size: 13px;
+                font-size: 80%;
                 width: 5.425%;
                 color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 5px 1px rgb(24, 24, 24),
                     inset 3px 3px 1px rgb(19, 19, 19),
-                    -1px -1px 1px rgb(78, 78, 78),
+                    -1px -1px 1px rgb(112, 112, 112),
                     inset -1px -1px 1px rgb(49, 49, 49)
             }
 
             .ks {
-                font-size: 13px;
                 width: 4.3%;
-                color: aliceblue;
                 background-color: rgb(28, 27, 29);
                 border-radius: 5px;
                 justify-content: center;
-                box-shadow: 2px 2px 2px rgb(19, 19, 19),
+                box-shadow: 0px 4px 1px rgb(19, 19, 19),
                     inset 3px 3px 1px rgb(19, 19, 19),
                     -1px -1px 1px rgb(78, 78, 78),
                     inset -1px -1px 1px rgb(49, 49, 49)
@@ -287,8 +326,8 @@
             .zhishiqu {
                 background: linear-gradient(rgb(44, 44, 44), rgb(42, 216, 219), rgba(45, 255, 245, 0.884), rgba(51, 164, 168, 0.582), rgba(36, 36, 36, 0.5));
                 width: 17.8%;
-                border-top-right-radius: 30px;
-                border-top-left-radius: 30px;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
                 box-shadow: 2px 2px 2px rgb(85, 85, 85),
                     inset 3px 3px 1px rgb(70, 70, 70),
                     -1px -1px 1px rgba(71, 71, 71, 0.452),
@@ -296,7 +335,7 @@
             }
 
             .line {
-                line-height: 20px;
+                line-height: 130%;
             }
 
             .kaung {
@@ -310,13 +349,334 @@
             .tu {
                 width: 40%;
                 height: 5%;
-                background-color: rgb(255, 222, 222);
+                background-color: rgb(58, 58, 58);
                 border-radius: 10%;
                 margin-bottom: 5%;
                 box-shadow: 1px 1px 1px rgb(19, 19, 19),
                     inset 2px 2px 1px rgb(19, 19, 19),
                     -1px -1px 1px rgb(78, 78, 78),
                     inset -1px -1px 1px rgb(49, 49, 49)
+            }
+
+            button {
+                border: none;
+            }
+
+            button:hover {
+                background-color: rgb(24, 24, 24);
+                cursor: pointer;
+            }
+
+            button:active {
+                box-shadow: 0 3px rgb(51, 50, 50);
+                transform: translateY(2px);
+            }
+
+            /* 当屏幕小于600px时要改变的css */
+            @media (max-width:600px) {
+                .wai {
+                    background-color: rgb(39, 39, 39);
+                    width: 350px;
+                    height: 112px;
+                    border-radius: 12px;
+                }
+
+                .nei {
+                    background-color: rgb(51, 50, 50);
+                    width: 97%;
+                    height: 92%;
+                    border-radius: 9px;
+                    border: 1px solid rgb(37, 37, 37);
+                }
+
+                .bianyuan {
+                    width: 97%;
+                    height: 92%;
+                    border-radius: 5px;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .yi {
+                    height: 14%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .er {
+                    height: 14%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .san {
+                    height: 14%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .si {
+                    height: 14%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .wu {
+                    height: 14%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .liu {
+                    height: 14%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .jiangeyi {
+                    height: 4%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .jiangeer {
+                    height: 3%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .jiangesan {
+                    height: 3%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .jiangesi {
+                    height: 3%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .jiangewu {
+                    height: 3%;
+                    background-color: rgb(51, 50, 50);
+                }
+
+                .anjianyi {
+                    font-size: 30%;
+                    width: 4.3%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .gnj {
+                    font-size: 25%;
+                    width: 4.3%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .anjiantu {
+                    font-size: 30%;
+                    width: 4.3%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .fuhao {
+                    font-size: 35%;
+                    width: 4.3%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .hcs {
+                    font-size: 30%;
+                    width: 4.3%;
+                    height: 222%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .tab {
+                    font-size: 30%;
+                    width: 6.55%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .daxie {
+                    font-size: 30%;
+                    width: 8.8%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .huiche {
+                    font-size: 30%;
+                    width: 8.8%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .shift {
+                    font-size: 30%;
+                    width: 11.05%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .kongjian {
+                    font-size: 30%;
+                    width: 13.3%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .kg {
+                    width: 31.3%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 3px;
+                    justify-content: center;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .di {
+                    font-size: 30%;
+                    width: 5.425%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .ks {
+                    width: 4.3%;
+                    color: aliceblue;
+                    background-color: rgb(28, 27, 29);
+                    border-radius: 10%;
+                    box-shadow: 0px 3px 1px rgb(24, 24, 24),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(35, 35, 35),
+                        inset -1px -1px 1px rgb(35, 35, 35)
+                }
+
+                .quyu {
+                    width: 13.3%;
+                }
+
+                .jg {
+                    margin-right: 0.2%;
+                }
+
+                .kongbai {
+                    width: 4.3%;
+                }
+
+                .zhishiqu {
+                    background: linear-gradient(rgb(44, 44, 44), rgb(42, 216, 219), rgba(45, 255, 245, 0.884), rgba(51, 164, 168, 0.582), rgba(36, 36, 36, 0.5));
+                    width: 17.8%;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    box-shadow: 1px 1px 1px rgb(85, 85, 85),
+                        inset 1px 1px 1px rgb(70, 70, 70),
+                        -1px -1px 1px rgba(71, 71, 71, 0.452),
+                        inset -1px -1px 1px rgb(70, 70, 70)
+                }
+
+                .line {
+                    line-height: 120%;
+                }
+
+                .kaung {
+                    border: 1px solid rgb(48, 48, 48);
+                }
+
+                .zjg {
+                    margin-right: 0.8%
+                }
+
+                .tu {
+                    width: 40%;
+                    height: 3%;
+                    background-color: rgb(36, 36, 36);
+                    border-radius: 10%;
+                    margin-bottom: 10%;
+                    box-shadow: 1px 1px 1px rgb(19, 19, 19),
+                        inset 1px 1px 1px rgb(19, 19, 19),
+                        -1px -1px 1px rgb(61, 61, 61),
+                        inset -1px -1px 1px rgb(63, 63, 63)
+                }
+
+                button {
+                    border: none;
+                }
+
+                button:hover {
+                    background-color: rgb(27, 27, 27);
+                    cursor: pointer;
+                }
+
+                button:active {
+                    box-shadow: 0 1px rgb(51, 50, 50);
+                    transform: translateY(2px);
+                }
             }
         </style>
         <div class="wai flex juzhong yinying">
@@ -341,151 +701,151 @@
                             <button class="anjianyi flex jg juzhong"><b>F11</b></button>
                             <button class="anjianyi flex juzhong" style="margin-right: 0.9%;"><b>F12</b></button>
                             <!--中-->
-                            <button class="anjianyi flex jg line"><b>PrtSc<br>SysRq</b></button>
-                            <button class="anjianyi flex jg line"><b>Scroll<br>Lock</b></button>
-                            <button class="anjianyi flex line zjg"><b>Pause<br>Break</b></button>
+                            <button class="gnj flex jg juzhong"><b>PrtSc<br>SysRq</b></button>
+                            <button class="gnj flex jg juzhong"><b>Scroll<br>Lock</b></button>
+                            <button class="gnj flex zjg juzhong"><b>Pause<br>Break</b></button>
                             <!--右-->
-                            <div class="zhishiqu flex"></div>
+                            <button class="zhishiqu flex"></button>
                         </div>
                         <div class="jiangeyi"></div>
                         <!--二行-->
                         <div class="er flex">
                             <!--左-->
-                            <div class="anjianyi flex jg line"><b>~<br>`</b></div>
-                            <div class="anjianyi flex jg line"><b>!<br>1</b></div>
-                            <div class="anjianyi flex jg line"><b>@<br>2</b></div>
-                            <div class="anjianyi flex jg line"><b>#<br>3</b></div>
-                            <div class="anjianyi flex jg line"><b>$<br>4</b></div>
-                            <div class="anjianyi flex jg line"><b>%<br>5</b></div>
-                            <div class="anjianyi flex jg line"><b>^<br>6</b></div>
-                            <div class="anjianyi flex jg line"><b>&<br>7</b></div>
-                            <div class="anjianyi flex jg line"><b>*<br>8</b></div>
-                            <div class="anjianyi flex jg line"><b>(<br>9</b></div>
-                            <div class="anjianyi flex jg line"><b>)<br>0</b></div>
-                            <div class="fuhao flex jg line"><b>_<br>-</b></div>
-                            <div class="fuhao flex jg line"><b>+<br>=</b></div>
-                            <div class="huiche flex juzhong zjg"><b>Backspace</b></div>
+                            <button class="anjianyi flex jg juzhong line"><b>~<br>`</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>!<br>1</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>@<br>2</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>#<br>3</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>$<br>4</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>%<br>5</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>^<br>6</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>&<br>7</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>*<br>8</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>(<br>9</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>)<br>0</b></button>
+                            <button class="fuhao flex jg juzhong line"><b>_<br>-</b></button>
+                            <button class="fuhao flex jg juzhong line"><b>+<br>=</b></button>
+                            <button class="huiche flex juzhong zjg"><b>Backspace</b></button>
                             <!--中-->
-                            <div class="anjianyi flex jg juzhong"><b>Isert</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>Home</b></div>
-                            <div class="anjianyi flex zjg"><b>Page<br>Up</b></div>
+                            <button class="gnj flex jg juzhong"><b>Isert</b></button>
+                            <button class="gnj flex jg juzhong"><b>Home</b></button>
+                            <button class="gnj flex zjg juzhong"><b>Page<br>Up</b></button>
                             <!--右-->
-                            <div class="anjianyi flex jg"><b>Num<br>Lock</b></div>
-                            <div class="fuhao flex jg juzhong"><b>/</b></div>
-                            <div class="fuhao flex jg juzhong"><b>.</b></div>
-                            <div class="fuhao flex juzhong"><b>-</b></div>
+                            <button class="gnj flex jg juzhong"><b>Num<br>Lock</b></button>
+                            <button class="fuhao flex jg juzhong"><b>/</b></button>
+                            <button class="fuhao flex jg juzhong"><b>.</b></button>
+                            <button class="fuhao flex juzhong"><b>-</b></button>
                         </div>
                         <div class="jiangeer"></div>
                         <!--三行-->
                         <div class="san flex">
                             <!--左-->
-                            <div class="tab flex jg juzhong"><b>Tab</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>Q</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>W</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>E</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>R</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>T</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>Y</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>U</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>I</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>O</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>P</b></div>
-                            <div class="anjianyi flex jg line"><b>{<br>[</b></div>
-                            <div class="anjianyi flex jg line"><b>}<br>]</b></div>
-                            <div class="tab flex line zjg"><b>|<br>\</b></div>
+                            <button class="tab flex jg juzhong"><b>Tab</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>Q</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>W</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>E</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>R</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>T</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>Y</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>U</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>I</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>O</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>P</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>{<br>[</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>}<br>]</b></button>
+                            <button class="tab flex line zjg juzhong"><b>|<br>\</b></button>
                             <!--中-->
-                            <div class="anjianyi flex jg juzhong"><b>Delete</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>End</b></div>
-                            <div class="anjianyi flex zjg"><b>Page<br>Down</b></div>
+                            <button class="gnj flex jg juzhong"><b>Delete</b></button>
+                            <button class="gnj flex jg juzhong"><b>End</b></button>
+                            <button class="gnj flex zjg juzhong"><b>Page<br>Down</b></button>
                             <!--右-->
-                            <div class="anjianyi flex jg juzhong"><b>7</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>8</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>9</b></div>
-                            <div class="fuhao flex juzhong" style="height: 222%;"><b>+</b></div>
+                            <button class="anjianyi flex jg juzhong"><b>7</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>8</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>9</b></button>
+                            <button class="fuhao flex juzhong" style="height: 222%;"><b>+</b></button>
                         </div>
                         <div class="jiangesan"></div>
                         <!--四行-->
                         <div class="si flex">
                             <!--左-->
-                            <div class="daxie flex jg juzhong"><b>Caps&nbspLock</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>A</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>S</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>D</b></div>
-                            <div class="anjiantu flex jg juzhong">
+                            <button class="daxie flex jg juzhong"><b>Caps&nbspLock</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>A</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>S</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>D</b></button>
+                            <button class="anjiantu flex jg juzhong">
                                 <div class="flex"></div><b style="margin-top: 10%;">F</b>
                                 <div class="tu flex"></div>
-                            </div>
-                            <div class="anjianyi flex jg juzhong"><b>G</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>H</b></div>
-                            <div class="anjiantu flex jg juzhong">
+                            </button>
+                            <button class="anjianyi flex jg juzhong"><b>G</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>H</b></button>
+                            <button class="anjiantu flex jg juzhong">
                                 <div class="flex"></div><b style="margin-top: 10%;">J</b>
                                 <div class="tu flex"></div>
-                            </div>
-                            <div class="anjianyi flex jg juzhong"><b>K</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>L</b></div>
-                            <div class="anjianyi flex jg juzhong line"><b>:<br>;</b></div>
-                            <div class="anjianyi flex jg juzhong line"><b>"<br>'</b></div>
-                            <div class="huiche flex juzhong zjg"><b>Enter</b></div>
+                            </button>
+                            <button class="anjianyi flex jg juzhong"><b>K</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>L</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>:<br>;</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>"<br>'</b></button>
+                            <button class="huiche flex juzhong zjg"><b>Enter</b></button>
                             <!--中-->
                             <div class="quyu flex jg juzhong zjg"></div>
                             <!--右-->
-                            <div class="anjianyi flex jg juzhong"><b>4</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>5</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>6</b></div>
+                            <button class="anjianyi flex jg juzhong"><b>4</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>5</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>6</b></button>
                         </div>
                         <div class="jiangesi"></div>
                         <!--五行-->
                         <div class="wu flex">
                             <!--左-->
-                            <div class="shift flex jg juzhong"><b>Shift</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>z</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>x</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>c</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>v</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>b</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>n</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>m</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>
+                            <button class="shift flex jg juzhong"><b>Shift</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>z</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>x</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>c</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>v</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>b</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>n</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>m</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>
                                     <<br>,
-                                </b></div>
-                            <div class="anjianyi flex jg juzhong"><b>><br>.</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>?<br>/</b></div>
-                            <div class="shift flex juzhong zjg"><b>Shift</b></div>
+                                </b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>><br>.</b></button>
+                            <button class="anjianyi flex jg juzhong line"><b>?<br>/</b></button>
+                            <button class="shift flex juzhong line zjg"><b>Shift</b></button>
                             <!--中-->
                             <div class="kongbai flex jg juzhong"></div>
-                            <div class="anjianyi flex jg juzhong"><b>↑</b></div>
+                            <button class="anjianyi flex jg juzhong"><b>↑</b></button>
                             <div class="kongbai flex jg juzhong zjg"></div>
                             <!--右-->
-                            <div class="anjianyi flex jg juzhong"><b>1</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>2</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>3</b></div>
-                            <div class="fuhao flex juzhong" style="height: 222%;"><b>Enter</b></div>
+                            <button class="anjianyi flex jg juzhong"><b>1</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>2</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>3</b></button>
+                            <button class="hcs flex juzhong"><b>Enter</b></button>
                         </div>
                         <div class="jiangewu"></div>
                         <!--六行-->
                         <div class="liu flex">
                             <!--左-->
-                            <div class="di flex jg juzhong"><b>Ctrl</b></div>
-                            <div class="ks flex jg juzhong"><img src="Windows.jpg" alt="Win" style="
+                            <button class="di flex jg juzhong"><b>Ctrl</b></button>
+                            <button class="ks flex jg juzhong"><img src="Windows.jpg" alt="Win" style="
                                     width: 50%;
                                     height: 50%;">
-                            </div>
-                            <div class="di flex jg juzhong"><b>Alt</b></div>
-                            <div class="kg flex jg juzhong"></div>
-                            <div class="di flex jg juzhong"><b>Alt</b></div>
-                            <div class="ks flex jg juzhong"><img src="Windows.jpg" alt="Win" style="
+                            </button>
+                            <button class="di flex jg juzhong"><b>Alt</b></button>
+                            <button class="kg flex jg juzhong"></button>
+                            <button class="di flex jg juzhong"><b>Alt</b></button>
+                            <button class="ks flex jg juzhong"><img src="Windows.jpg" alt="Win" style="
                                                                 width: 50%;
-                                                                height: 50%;"></div>
-                            <div class="ks flex jg juzhong"><img src="右键.jpg" alt="RMB" style="
+                                                                height: 50%;"></button>
+                            <button class="ks flex jg juzhong"><img src="右键.jpg" alt="RMB" style="
                                                                                             width: 50%;
-                                                                                            height: 50%;"></div>
-                            <div class="di flex juzhong zjg"><b>Ctrl</b></div>
+                                                                                            height: 50%;"></button>
+                            <button class="di flex juzhong zjg"><b>Ctrl</b></button>
                             <!--中-->
-                            <div class="anjianyi flex jg juzhong"><b>←</b></div>
-                            <div class="anjianyi flex jg juzhong"><b>↓</b></div>
-                            <div class="anjianyi flex jg juzhong zjg"><b>→</b></div>
+                            <button class="anjianyi flex jg juzhong"><b>←</b></button>
+                            <button class="anjianyi flex jg juzhong"><b>↓</b></button>
+                            <button class="anjianyi flex jg juzhong zjg"><b>→</b></button>
                             <!--右-->
-                            <div class="kongjian flex jg juzhong"><b>0</b></div>
+                            <button class="kongjian flex jg juzhong"><b>0</b></button>
                         </div>
                     </anjian>
 
