@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgb(18, 175, 84), rgb(79, 172, 115));
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 342px;
+            height: 342px;
+            background: linear-gradient(90deg,
+                    rgb(139, 139, 139),
+                    rgb(199, 199, 199),
+                    rgb(219, 219, 219),
+                    rgb(185, 185, 185),
+                    rgb(175, 175, 175));
+            border: 8px solid #2c2c2c;
+            border-radius: 3px;
+        }
+
+        .box1 {
+            width: 333px;
+            height: 9px;
+        }
+
+        .box2 {
+            width: 207px;
+            height: 9px;
+            margin-left: 63px;
+        }
+
+        .box3 {
+            width: 126px;
+            height: 9px;
+        }
+
+        .box4 {
+            width: 270px;
+            height: 9px;
+            margin-left: 63px;
+        }
+
+        .kuai {
+            width: 9px;
+            height: 9px;
+            /* background: linear-gradient(45deg,
+                    rgb(0, 0, 0),
+                    rgba(162, 181, 182, 0.699),
+                    rgb(21, 0, 212),
+                    rgb(47, 171, 253),
+                    rgba(180, 180, 180, 0.849),
+                    rgb(0, 0, 0)); */
+            background-color: #000;
+            border: 1px solid rgb(180, 180, 180);
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+
+        .kong {
+            width: 9px;
+            height: 9px;
+            background: linear-gradient(rgb(150, 150, 150),
+                    rgb(224, 224, 224),
+                    rgb(224, 224, 224),
+                    rgb(150, 150, 150));
+            border: 1px solid rgb(0, 0, 0);
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .jiao {
+            justify-content: center;
+            align-items: center;
+            width: 61px;
+            height: 61px;
+            background: linear-gradient(135deg,
+                    rgb(173, 173, 173),
+                    rgb(172, 172, 172),
+                    rgb(201, 201, 201),
+                    #888888,
+                    rgb(131, 131, 131));
+            border: 7px solid #000000;
+            border-radius: 12px;
+            box-sizing: border-box;
+            padding: 4px;
+        }
+
+        .j1 {
+            margin-right: 2px;
+            margin-bottom: 2px;
+        }
+
+        .j2 {
+            margin-left: 2px;
+            margin-bottom: 2px;
+
+        }
+
+        .j3 {
+            margin-top: 2px;
+            margin-right: 2px;
+        }
+
+        .bian {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(45deg,
+                    rgb(20, 20, 20),
+                    rgb(43, 43, 43),
+                    rgb(99, 99, 99),
+                    rgb(37, 37, 37),
+                    rgb(20, 20, 20));
+            border-radius: 100px;
+            border: 5px solid rgb(0, 0, 0);
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 81px;
+            height: 81px;
+            border-radius: 7px;
+            border: 3px solid rgba(41, 41, 41, 0.733);
+            box-sizing: border-box;
+        }
+
+        .img {
+            width: 81px;
+            height: 81px;
+            background-color: #000;
+            border-radius: 15px;
+        }
+
+        .tuk {
+            width: 81px;
+            height: 9px;
+        }
+
+        div>div {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 二维码 -->
+    <div class="box">
+        <!-- 上  -->
+        <div class="column">
+            <div class="box1">
+                <!-- 角 -->
+                <div class="jiao j1">
+                    <div class="bian"></div>
+                </div>
+                <!-- 块 -->
+                <div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                </div>
+                <!-- 角 -->
+                <div class="jiao j2">
+                    <div class="bian"></div>
+                </div>
+            </div>
+            <div class="box2">
+                <!-- 块 -->
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+            </div>
+            <div class="box2">
+                <!-- 块 -->
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+            </div>
+            <div class="box2">
+                <!-- 块 -->
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+            </div>
+            <div class="box2">
+                <!-- 块 -->
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+            </div>
+            <div class="box2">
+                <!-- 块 -->
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+            </div>
+            <div class="box2">
+                <!-- 块 -->
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+            </div>
+        </div>
+        <!-- 中 -->
+        <div class="column">
+            <!-- 中上 -->
+            <div class="column">
+                <div class="box1">
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                </div>
+                <div class="box1">
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                </div>
+                <div class="box1">
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                </div>
+                <div class="box1">
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                </div>
+                <div class="box1">
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                </div>
+                <div class="box1">
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                </div>
+
+                <div class="box1">
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                </div>
+            </div>
+            <!-- 居中 -->
+            <div class="column">
+                <div class="box1">
+                    <div class="box3">
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="img"><img src="../图片/头像.jpg" alt="头像"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="tuk"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="tuk"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="tuk"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="tuk"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box3">
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="tuk"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="tuk"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="tuk"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box3">
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                    </div>
+                    <div class="tuk"></div>
+                    <div class="box3">
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                        <div class="kong"></div>
+                        <div class="kong"></div>
+                        <div class="kuai"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 中下 -->
+            <div class="column">
+                <div class="box1">
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                </div>
+                <div class="box1">
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                </div>
+                <div class="box1">
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                </div>
+                <div class="box1">
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                </div>
+                <div class="box1">
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                </div>
+                <div class="box1">
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                </div>
+                <div class="box1">
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 下 -->
+        <div class="column">
+            <div class="box1">
+                <!-- 角 -->
+                <div class="jiao j3">
+                    <div class="bian"></div>
+                </div>
+                <!-- 块 -->
+                <div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kong"></div>
+                    <div class="kuai"></div>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+            </div>
+            <div class="box4">
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+            </div>
+            <div class="box4">
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+            </div>
+            <div class="box4">
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+            </div>
+            <div class="box4">
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+            </div>
+            <div class="box4">
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+                <div class="kuai"></div>
+                <div class="kong"></div>
+                <div class="kuai"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
